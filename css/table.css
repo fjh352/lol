@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+		
+* {margin: 0; padding: 0; }
+		
+body {
+			font-family: Ubuntu, arial, verdana;
+
+		}
+		
+		/*----------
+		Blocks
+		----------*/
+		/*Pricing table and price blocks*/
+		.pricing_table {
+			line-height: 150%; 
+			font-size: 15px; 
+			margin: 0 auto; 
+			width: 100%; 
+			max-width: 1100px; 
+			
+			padding-top: 10px;
+			margin-top: 60px;
+		}
+		
+		.price_block {
+			text-align: center;  
+			width: 100%; 
+			color: #020; 
+			float: left; 
+			list-style-type: none; 
+			transition: all 0.25s; 
+			position: relative; 
+			box-sizing: border-box;
+			margin-bottom: 10px; 
+			border-bottom: 1px solid transparent; 
+			
+		}
+		
+		/*Price heads*/
+		.pricing_table h3 {
+			text-transform: uppercase; 
+			padding: 5px 0; 
+			box-shadow: inset 0 0 45px 1px #DB7224;
+			margin: -10px 0 1px 0;
+		}
+		
+		.pricing_table ul{
+			box-shadow: inset 0 0 45px 1px #DB7224;
+		}
+		
+		/*Price tags*/
+		.price {
+			display: table; 
+			box-shadow: inset 0 0 45px 1px #DB7224;
+			width: 100%; 
+			height: 70px; 
+		}
+		.price_figure {
+			font-size: 24px; 
+			text-transform: uppercase; 
+			vertical-align: middle; 
+			display: table-cell;
+		}
+		.price_number {
+			font-weight: bold; 
+			display: block;
+		}
+		
+		/*Features*/
+		.features {
+			font-size:15px;
+			color: #fff;
+		}
+		.features li {
+			padding: 8px 15px;
+			border-bottom: 1px solid #ccc; 
+			font-size: 11px; 
+			list-style-type: none;
+		}
+		
+		.footer {
+			padding: 15px; 
+			box-shadow: inset 0 0 45px 1px #DB7224;
+
+		}
+		.action_button {
+			text-decoration: none; 
+			color: #CCCCCC; 
+			font-weight: bold; 
+			padding: 5px 20px; 
+			font-size: 21px; 
+			text-transform: uppercase;
+		}
+		
+		.price_block:hover {
+
+			transform: scale(1.04) translateY(-5px); 
+			z-index: 1; 
+			border-bottom: 0 none;
+		}
+		.price_block:hover .price {
+			
+			box-shadow: inset 0 0 45px 1px #DB7224;
+		}
+		.price_block:hover h3 {
+			
+		}
+	
+		.action_button:hover{
+			box-shadow: inset 0 0 45px 1px #CCCCCC;
+		}
+		
+		@media only screen and (min-width : 480px) and (max-width : 768px) {
+			.price_block {width: 50%;}
+			.price_block:nth-child(odd) {border-right: 1px solid transparent;}
+			.price_block:nth-child(3) {clear: both;}
+			
+			.price_block:nth-child(odd):hover {border: 0 none;}
+		}
+		@media only screen and (min-width : 768px){
+			.price_block {width: 25%;}
+			.price_block {border-right: 1px solid transparent; border-bottom: 0 none;}
+			.price_block:last-child {border-right: 0 none;}
+			
+			.price_block:hover {border: 0 none;}
+		}
+		
+
+
